@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MenuOpener : MonoBehaviour
 {
-    public Image objMenu;
+    public GameObject objMenu;
     private bool _isMenuOpen;
    public void onbuttonclick()
     {
@@ -16,6 +16,10 @@ public class MenuOpener : MonoBehaviour
     } 
     void openMenu()
     {
-        
+        objMenu.SetActive(true);
+    } 
+    void closeMenu()
+    {
+        objMenu.SetActive(false);
     }
 }

@@ -29,9 +29,9 @@ public class PlacerObj : MonoBehaviour
 
 
                     activeObject.transform.position = new Vector3
-                          (activeObject.transform.position.x + touch.deltaPosition.x * 0.01f,
+                          (activeObject.transform.position.x + touch.deltaPosition.x * 0.1f,
                           activeObject.transform.position.y,
-                          activeObject.transform.position.z + touch.deltaPosition.y * 0.01f);
+                          activeObject.transform.position.z + touch.deltaPosition.y * 0.1f);
                 }
             }
         }
@@ -53,6 +53,6 @@ public class PlacerObj : MonoBehaviour
 
     public void onObjectPlaced()
     {
-        activeObject = null;
+        activeObject = null; 
     }
 }
