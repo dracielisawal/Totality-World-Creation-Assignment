@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlacerObj : MonoBehaviour
 {
-    public GameObject objPrefab;
+    public GameObject[] objPrefab;
     public GameObject activeObject;
     public Transform origin;
     public bool isObjActive;
@@ -36,9 +36,9 @@ public class PlacerObj : MonoBehaviour
 
     }
 
-    public void onObjSelected()
+    public void onObjSelected(int index)
     {
-        activeObject = Instantiate(objPrefab, origin);
+        activeObject = Instantiate(objPrefab[index], origin);
         isObjActive = true;
     }
 }
