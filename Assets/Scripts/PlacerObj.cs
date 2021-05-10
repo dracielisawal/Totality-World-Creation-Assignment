@@ -17,8 +17,10 @@ public class PlacerObj : MonoBehaviour
     void Update()
     {
         if(activeObject !=null && isObjActive)
-        {
-            if (Input.touchCount > 0)
+        {  
+
+            
+            if (Input.touchCount == 1)
             {
                 Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero
 
@@ -34,11 +36,23 @@ public class PlacerObj : MonoBehaviour
             }
         }
 
-    }
+    } 
+
+    public void OnRotate()   //simple rotation by 90 degree on Y axis
+    {  
+        if(activeObject != null)
+        activeObject.transform.Rotate(0, -90, 0);
+    } 
+
 
     public void onObjSelected(int index)
     {
         activeObject = Instantiate(objPrefab[index], origin);
         isObjActive = true;
+    }
+
+    public void onObjectPlaced()
+    {
+        activeObject = null;
     }
 }
