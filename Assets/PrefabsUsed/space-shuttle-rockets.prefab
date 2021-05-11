@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4588939813821850}
   - component: {fileID: 33715279517407584}
   - component: {fileID: 23886736631277122}
-  - component: {fileID: 64510455443796088}
   m_Layer: 0
   m_Name: space-shuttle-base
   m_TagString: Untagged
@@ -56,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -84,20 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64510455443796088
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360927544235898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1372157985329676
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +96,6 @@ GameObject:
   - component: {fileID: 4506862559059908}
   - component: {fileID: 33895162660542972}
   - component: {fileID: 23814567156907722}
-  - component: {fileID: 64243934052870682}
   m_Layer: 0
   m_Name: space-rocket_L
   m_TagString: Untagged
@@ -154,6 +140,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -181,20 +168,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64243934052870682
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372157985329676}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1389373762551062
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,9 +178,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4638760702848014}
+  - component: {fileID: 2206914731945043926}
   m_Layer: 0
   m_Name: space-shuttle-rockets
-  m_TagString: Untagged
+  m_TagString: Moveableobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 1389373762551062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4771096855364630}
   - {fileID: 4506862559059908}
@@ -231,6 +206,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2206914731945043926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389373762551062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.390942, y: 54.731934, z: 12.670496}
+  m_Center: {x: 0.5276582, y: 27.808746, z: -1.5079489}
 --- !u!1 &1531923459568130
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +230,6 @@ GameObject:
   - component: {fileID: 4771096855364630}
   - component: {fileID: 33419394385076738}
   - component: {fileID: 23436404471502922}
-  - component: {fileID: 64398272495971380}
   m_Layer: 0
   m_Name: space-rocket-big
   m_TagString: Untagged
@@ -287,6 +274,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -311,20 +299,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64398272495971380
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531923459568130}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1537993852809314
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +311,6 @@ GameObject:
   - component: {fileID: 4107252280855274}
   - component: {fileID: 33504698295058238}
   - component: {fileID: 23772064792638932}
-  - component: {fileID: 64434589727861028}
   m_Layer: 0
   m_Name: space-shuttle-door_R
   m_TagString: Untagged
@@ -381,6 +355,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -406,20 +381,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64434589727861028
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537993852809314}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300010, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1732586282081818
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +393,6 @@ GameObject:
   - component: {fileID: 4093835648385304}
   - component: {fileID: 33458826357725880}
   - component: {fileID: 23154546100563778}
-  - component: {fileID: 64979061210474872}
   m_Layer: 0
   m_Name: space-shuttle-door_L
   m_TagString: Untagged
@@ -476,6 +437,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -501,20 +463,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64979061210474872
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732586282081818}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1929021064480764
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +475,6 @@ GameObject:
   - component: {fileID: 4488340164667544}
   - component: {fileID: 33021164949788456}
   - component: {fileID: 23451835904736912}
-  - component: {fileID: 64539735598209580}
   m_Layer: 0
   m_Name: space-rocket_R
   m_TagString: Untagged
@@ -571,6 +519,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -598,17 +547,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64539735598209580
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929021064480764}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300004, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}

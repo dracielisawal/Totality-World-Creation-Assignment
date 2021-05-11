@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1660859939363314416}
   - component: {fileID: 1660859939361987282}
   - component: {fileID: 1660859939360888850}
-  - component: {fileID: 4175509278437990864}
   m_Layer: 0
   m_Name: car-truck-dump-base
   m_TagString: Untagged
@@ -56,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -86,20 +86,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4175509278437990864
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145424}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145426
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,9 +96,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1660859939363314418}
+  - component: {fileID: 6612257465653082849}
   m_Layer: 0
   m_Name: car-truck-dump
-  m_TagString: Untagged
+  m_TagString: Moveableobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +125,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6612257465653082849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660859939363145426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1879888, y: 3.777748, z: 8.393003}
+  m_Center: {x: -0.012122393, y: 1.388874, z: -0.2523992}
 --- !u!1 &1660859939363145428
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +149,6 @@ GameObject:
   - component: {fileID: 1660859939363314420}
   - component: {fileID: 1660859939361987286}
   - component: {fileID: 1660859939360888854}
-  - component: {fileID: 7435734602890464878}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_BL2
   m_TagString: Untagged
@@ -193,6 +193,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -218,20 +219,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7435734602890464878
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145428}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145430
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +231,6 @@ GameObject:
   - component: {fileID: 1660859939363314422}
   - component: {fileID: 1660859939361987280}
   - component: {fileID: 1660859939360888848}
-  - component: {fileID: 2107632419433946596}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_BL1
   m_TagString: Untagged
@@ -288,6 +275,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -313,20 +301,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2107632419433946596
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145430}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145432
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +313,6 @@ GameObject:
   - component: {fileID: 1660859939363314424}
   - component: {fileID: 1660859939361987290}
   - component: {fileID: 1660859939360888858}
-  - component: {fileID: 5218972333100501618}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_BR2
   m_TagString: Untagged
@@ -383,6 +357,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -408,20 +383,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5218972333100501618
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145432}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145434
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +395,6 @@ GameObject:
   - component: {fileID: 1660859939363314426}
   - component: {fileID: 1660859939361987284}
   - component: {fileID: 1660859939360888852}
-  - component: {fileID: 4757368221696933544}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_BR1
   m_TagString: Untagged
@@ -478,6 +439,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -503,20 +465,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4757368221696933544
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145434}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145436
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +477,6 @@ GameObject:
   - component: {fileID: 1660859939363314428}
   - component: {fileID: 1660859939361987294}
   - component: {fileID: 1660859939360888862}
-  - component: {fileID: 4306404305834588534}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_FR
   m_TagString: Untagged
@@ -573,6 +521,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -598,20 +547,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4306404305834588534
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145436}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300010, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1660859939363145438
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +559,6 @@ GameObject:
   - component: {fileID: 1660859939363314430}
   - component: {fileID: 1660859939361987288}
   - component: {fileID: 1660859939360888856}
-  - component: {fileID: 7633196452282884944}
   m_Layer: 0
   m_Name: car-truck-dump-wheel_FL
   m_TagString: Untagged
@@ -668,6 +603,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -693,17 +629,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7633196452282884944
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660859939363145438}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300004, guid: 6dbbe05457eb9bc49ae22aee21c46628, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}

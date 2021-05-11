@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000014163640752}
+  - component: {fileID: 3941103998536730593}
   m_Layer: 0
   m_Name: car-hippie-van
-  m_TagString: Untagged
+  m_TagString: Moveableobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,6 +36,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3941103998536730593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014082902004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7077746, y: 2.2630708, z: 4.0664177}
+  m_Center: {x: -0.005801469, y: 1.0569724, z: 0.055955887}
 --- !u!1 &1093298050136684
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +60,6 @@ GameObject:
   - component: {fileID: 4899926563678452}
   - component: {fileID: 33577309101405106}
   - component: {fileID: 23916054807898748}
-  - component: {fileID: 64234734174069670}
   m_Layer: 0
   m_Name: car-hippie-van-wheel_FL
   m_TagString: Untagged
@@ -91,6 +104,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -116,20 +130,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64234734174069670
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093298050136684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300014, guid: 59c03c82c26dcff4f9695a5d7268cf39, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1200644674060462
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +142,6 @@ GameObject:
   - component: {fileID: 4731823001391966}
   - component: {fileID: 33785317976224420}
   - component: {fileID: 23124339844313726}
-  - component: {fileID: 64320770444263676}
   m_Layer: 0
   m_Name: car-hippie-van-wheel_FR
   m_TagString: Untagged
@@ -186,6 +186,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -211,20 +212,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64320770444263676
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200644674060462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300018, guid: 59c03c82c26dcff4f9695a5d7268cf39, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1668108674502366
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +224,6 @@ GameObject:
   - component: {fileID: 4947869136695906}
   - component: {fileID: 33133177390096580}
   - component: {fileID: 23983881292723426}
-  - component: {fileID: 64783403964692166}
   m_Layer: 0
   m_Name: car-hippie-van-base
   m_TagString: Untagged
@@ -281,6 +268,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -311,20 +299,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64783403964692166
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668108674502366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300010, guid: 59c03c82c26dcff4f9695a5d7268cf39, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1873964094228546
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +311,6 @@ GameObject:
   - component: {fileID: 4104421915914050}
   - component: {fileID: 33621782972628462}
   - component: {fileID: 23072257935736034}
-  - component: {fileID: 64973858262992558}
   m_Layer: 0
   m_Name: car-hippie-van-wheel_BL
   m_TagString: Untagged
@@ -381,6 +355,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -406,20 +381,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64973858262992558
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873964094228546}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300016, guid: 59c03c82c26dcff4f9695a5d7268cf39, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1924107927847086
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +393,6 @@ GameObject:
   - component: {fileID: 4559585525241136}
   - component: {fileID: 33804984923846064}
   - component: {fileID: 23642880816728508}
-  - component: {fileID: 64794647268866472}
   m_Layer: 0
   m_Name: car-hippie-van-wheel_BR
   m_TagString: Untagged
@@ -476,6 +437,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -501,17 +463,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64794647268866472
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924107927847086}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 59c03c82c26dcff4f9695a5d7268cf39, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}

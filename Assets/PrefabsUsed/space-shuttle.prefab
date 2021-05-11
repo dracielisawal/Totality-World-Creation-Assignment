@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4125519577280646}
   - component: {fileID: 33046942828715248}
   - component: {fileID: 23982480779503860}
-  - component: {fileID: 64752684097756808}
   m_Layer: 0
   m_Name: space-shuttle-door_L
   m_TagString: Untagged
@@ -56,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,20 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64752684097756808
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104280995460938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1224121043386044
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +93,6 @@ GameObject:
   - component: {fileID: 4878309059174946}
   - component: {fileID: 33907684078138428}
   - component: {fileID: 23194199407384010}
-  - component: {fileID: 64447264734381850}
   m_Layer: 0
   m_Name: space-shuttle-base
   m_TagString: Untagged
@@ -151,6 +137,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -179,20 +166,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64447264734381850
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224121043386044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1414794733988748
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +178,6 @@ GameObject:
   - component: {fileID: 4245514662343956}
   - component: {fileID: 33725297862883476}
   - component: {fileID: 23223492144754374}
-  - component: {fileID: 64469870893770642}
   m_Layer: 0
   m_Name: space-shuttle-door_R
   m_TagString: Untagged
@@ -249,6 +222,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -274,20 +248,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64469870893770642
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414794733988748}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300010, guid: 3b546d818c9fc4c7e97b36c99a87f738, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1918453262260934
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,9 +258,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4815159014517072}
+  - component: {fileID: 6962547950019757667}
   m_Layer: 0
   m_Name: space-shuttle
-  m_TagString: Untagged
+  m_TagString: Moveableobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 1918453262260934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4878309059174946}
   - {fileID: 4125519577280646}
@@ -321,3 +283,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6962547950019757667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918453262260934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.880787, y: 35.323353, z: 9.18214}
+  m_Center: {x: 1.011178, y: 18.803125, z: 4.09107}

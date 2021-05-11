@@ -7,6 +7,7 @@ public class PlacerObj : MonoBehaviour
     public GameObject[] objPrefab;
     public GameObject activeObject;
     public Transform origin;
+    public GameObject activemenu;
     public bool isObjActive;
     void Start()
     {
@@ -17,8 +18,8 @@ public class PlacerObj : MonoBehaviour
     void Update()
     {
         if(activeObject !=null && isObjActive)
-        {  
-
+        {
+            activemenu.SetActive(true);
             
             if (Input.touchCount == 1)
             {
@@ -34,6 +35,10 @@ public class PlacerObj : MonoBehaviour
                           activeObject.transform.position.z + touch.deltaPosition.y * 0.1f);
                 }
             }
+        } 
+        else
+        {
+            activemenu.SetActive(false);
         }
 
     } 
@@ -43,8 +48,25 @@ public class PlacerObj : MonoBehaviour
         if(activeObject != null)
         activeObject.transform.Rotate(0, -90, 0);
     } 
-
-
+    public void OnDelete()
+    {
+        if (activeObject != null)
+        {
+            Debug.Log("Deleted");
+            Destroy(activeObject);
+            activeObject = null;
+        }
+        
+    }
+    public void Onplaced()
+    {
+        if (activeObject != null)
+        { 
+            
+            Debug.Log("Placed");
+            activeObject = null;
+        }
+    }
     public void onObjSelected(int index)
     {
         activeObject = Instantiate(objPrefab[index], origin);

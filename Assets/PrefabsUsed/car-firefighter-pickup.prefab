@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &7797664787434801616
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -106,7 +108,6 @@ GameObject:
   - component: {fileID: 1663323357442429650}
   - component: {fileID: 1663323357439005424}
   - component: {fileID: 1663323357440004144}
-  - component: {fileID: 5609885455664804751}
   m_Layer: 0
   m_Name: car-firefighter-pickup-wheel_FR
   m_TagString: Untagged
@@ -151,6 +152,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -176,20 +178,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5609885455664804751
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663323357442002674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 771e0c35f8a6dec4ba604e2952c15efe, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1663323357442002680
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,9 +188,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1663323357442429656}
+  - component: {fileID: 6865655500250109320}
   m_Layer: 0
   m_Name: car-firefighter-pickup
-  m_TagString: Untagged
+  m_TagString: Moveableobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,6 +215,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6865655500250109320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663323357442002680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1764336, y: 2.629582, z: 6.2366314}
+  m_Center: {x: 0.011628628, y: 1.3317778, z: 0.1518488}
 --- !u!1 &1663323357442002682
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +239,6 @@ GameObject:
   - component: {fileID: 1663323357442429658}
   - component: {fileID: 1663323357439005432}
   - component: {fileID: 1663323357440004152}
-  - component: {fileID: 5601592681728433601}
   m_Layer: 0
   m_Name: car-firefighter-pickup-base
   m_TagString: Untagged
@@ -281,6 +283,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -311,20 +314,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5601592681728433601
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663323357442002682}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 771e0c35f8a6dec4ba604e2952c15efe, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1663323357442002684
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +326,6 @@ GameObject:
   - component: {fileID: 1663323357442429660}
   - component: {fileID: 1663323357439005434}
   - component: {fileID: 1663323357440004154}
-  - component: {fileID: 484932582424345458}
   m_Layer: 0
   m_Name: car-firefighter-pickup-wheel_BL
   m_TagString: Untagged
@@ -381,6 +370,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -406,20 +396,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &484932582424345458
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663323357442002684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 771e0c35f8a6dec4ba604e2952c15efe, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1663323357442002686
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +453,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -501,6 +479,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &6929679662931035361
 MeshCollider:
   m_ObjectHideFlags: 0
