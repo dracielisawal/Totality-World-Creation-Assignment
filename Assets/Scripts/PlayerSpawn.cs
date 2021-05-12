@@ -8,10 +8,12 @@ public class PlayerSpawn : MonoBehaviour
     public GameObject editButton;
     public GameObject worldcreatorui;
     public GameObject objectselector;
+    public Transform spawnpos;
    
     
  public void oncreationDone()
     {
+        player.transform.position = spawnpos.position;
         editButton.SetActive(true);
         PlacerObj.instance.activeObject = null;
         player.SetActive(true);

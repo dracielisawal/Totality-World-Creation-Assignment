@@ -6,6 +6,8 @@ public class PauseMenu : MonoBehaviour
 {
    public GameObject pausemenu;
     private bool _isPauseMenuOpen;
+    public PlayerSpawn spawner;
+ 
     
    public void pauseMenuopener()
     {
@@ -29,6 +31,6 @@ public class PauseMenu : MonoBehaviour
 
     public void respawn()
     {
-        //check if player is active, if yes, respawn.
+        spawner.oncreationDone();
     }
 }
