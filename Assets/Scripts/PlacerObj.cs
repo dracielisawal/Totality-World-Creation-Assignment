@@ -21,7 +21,7 @@ public class PlacerObj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(activeObject !=null && isObjActive)
+        if(activeObject !=null)
         {
             activemenu.SetActive(true);
             

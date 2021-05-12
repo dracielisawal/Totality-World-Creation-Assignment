@@ -20,5 +20,15 @@ public class PauseMenu : MonoBehaviour
             pausemenu.SetActive(false);
             _isPauseMenuOpen = false;
         }
+    } 
+
+    public void exitapp()
+    {
+        Application.Quit();
+    } 
+
+    public void respawn()
+    {
+        //check if player is active, if yes, respawn.
     }
 }
