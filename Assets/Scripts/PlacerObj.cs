@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class PlacerObj : MonoBehaviour
 {
+    public static PlacerObj instance = null;
     public GameObject[] objPrefab;
     public GameObject activeObject;
     public Transform origin;
     public GameObject activemenu;
     public bool isObjActive;
-    void Start()
-    {
-        
-    }
 
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
