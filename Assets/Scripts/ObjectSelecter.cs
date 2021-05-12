@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectSelecter : MonoBehaviour
 {
-    public PlacerObj placer;
+   
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -19,7 +19,7 @@ public class ObjectSelecter : MonoBehaviour
                 if (hitInfo.transform.gameObject.tag == "Moveableobj")
                 {
                     Debug.Log(hitInfo.transform.gameObject.name);
-                    placer.activeObject = hitInfo.transform.gameObject;
+                   PlacerObj.instance.activeObject = hitInfo.transform.gameObject;
                 }
 
             }
