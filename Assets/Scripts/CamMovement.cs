@@ -6,6 +6,7 @@ public class CamMovement : MonoBehaviour
 {
 
     public Transform target;
+    public GameObject World;
     public Vector3 targetOffset;
     public float distance = 5.0f;
     public float maxDistance = 20;
@@ -67,6 +68,20 @@ public class CamMovement : MonoBehaviour
     /*
       * Camera logic on LateUpdate to only update after all character movement logic has been handled.
       */
+
+
+    private void Update()
+    {
+
+        //if (PlacerObj.instance.activeObject != null)
+        //{
+        //    target = PlacerObj.instance.activeObject.gameObject.transform;
+        //}
+        //else
+        //{
+        //    target = World.transform;
+        //}
+    }
     void LateUpdate()
     {
         // If Control and Alt and Middle button? ZOOM!

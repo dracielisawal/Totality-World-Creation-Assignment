@@ -1820,8 +1820,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 270549111}
+  World: {fileID: 270549110}
   targetOffset: {x: 0, y: -99.1, z: 103.9}
-  distance: 157.23643
+  distance: 100
   maxDistance: 100
   minDistance: -100
   xSpeed: 5
