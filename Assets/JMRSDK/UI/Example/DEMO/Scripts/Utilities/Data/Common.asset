@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1655124374, guid: d111f6bc56ed34a9ca892a0422896f4f, type: 3}
+  m_Name: Common
+  m_EditorClassIdentifier: 
+  loadingIcon: {fileID: 0}
+  transitionData:
+    useCommon: 1
+    startPosition: 0
+    targetPosition: 0
+    transitionDuration: 0
+    waitDuration: 0
+  progressBar:
+    useCommon: 1
+    progressTitle: 
+    progressValue: 0
+    minValue: 0
+    maxValue: 1
+  popupConfigDataContainer:
+  - type: 0
+    prefab: {fileID: 1537890415964393438, guid: 22241ef38f2cd69429114e5374920287,
+      type: 3}
+  - type: 1
+    prefab: {fileID: 7369238000805057626, guid: 69eb0c876a2558f41906f23b6d543680,
+      type: 3}
+  - type: 2
+    prefab: {fileID: 7369238000805057626, guid: 69eb0c876a2558f41906f23b6d543680,
+      type: 3}
+  - type: 3
+    prefab: {fileID: 7369238000805057626, guid: 69eb0c876a2558f41906f23b6d543680,
+      type: 3}

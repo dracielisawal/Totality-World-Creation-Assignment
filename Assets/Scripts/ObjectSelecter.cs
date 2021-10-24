@@ -29,7 +29,7 @@ public class ObjectSelecter : MonoBehaviour
             {
               Debug.Log( "No hit");
             }
-            Debug.Log("Mouse is down");
+           // Debug.Log("Mouse is down");
         }
     }
 }

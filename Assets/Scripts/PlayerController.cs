@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // References
+    // References 
+
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private CharacterController characterController;
 

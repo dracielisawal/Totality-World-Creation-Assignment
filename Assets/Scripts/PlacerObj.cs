@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using JMRSDK;
 
 public class PlacerObj : MonoBehaviour
 {
@@ -80,5 +81,6 @@ public class PlacerObj : MonoBehaviour
     public void onObjectPlaced()
     {
         activeObject = null; 
-    }
+    } 
+
 }
